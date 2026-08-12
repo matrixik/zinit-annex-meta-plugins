@@ -137,7 +137,7 @@ Zinit_Annex_Meta_Plugins_Config_Map=(
     jonas/tig               "$_std binary make'prefix=$ZPFX install'"
 
     # Fuzzy searchers
-    fzf                     "$_std pack'bgn-binary'"
+    fzf                     "$_std pack'bgn-binary' id-as'junegunn/fzf'"
     fzy                     "$_std pack'bgn' git"
     skim-rs/skim            "$_std binary from'gh-r' lucid mv'skim-* -> skim' sbin'skim/sk' atclone'ln -s skim/shell/completion.zsh _sk; cp -f skim/man/man1/sk.1 $ZINIT[MAN_DIR]/man1;' atpull'%atclone'"
     peco/peco               "$_std binary from'gh-r' mv'peco* peco' sbin'**/peco(.exe|) -> peco'"
