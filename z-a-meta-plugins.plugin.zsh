@@ -70,7 +70,7 @@ Zinit_Annex_Meta_Plugins_Map=(
     console-tools "dircolors-material sharkdp ogham/exa BurntSushi/ripgrep jonas/tig"
 
     # Fuzzy searchers (4 of them).
-    fuzzy       "fzf fzy skim-rs/skim peco/peco"
+    fuzzy       "junegunn/fzf fzy skim-rs/skim peco/peco"
     fuzzy-src   "fzf-go fzy skim-cargo peco-go"
 
     # Git extensions.
@@ -137,7 +137,7 @@ Zinit_Annex_Meta_Plugins_Config_Map=(
     jonas/tig               "$_std binary make'prefix=$ZPFX install'"
 
     # Fuzzy searchers
-    fzf                     "$_std pack'bgn-binary' id-as'junegunn/fzf'"
+    junegunn/fzf            "$_std pack'bgn-binary'"
     fzy                     "$_std pack'bgn' git"
     skim-rs/skim            "$_std binary from'gh-r' lucid mv'skim-* -> skim' sbin'skim/sk' atclone'ln -s skim/shell/completion.zsh _sk; cp -f skim/man/man1/sk.1 $ZINIT[MAN_DIR]/man1;' atpull'%atclone'"
     peco/peco               "$_std binary from'gh-r' mv'peco* peco' sbin'**/peco(.exe|) -> peco'"
